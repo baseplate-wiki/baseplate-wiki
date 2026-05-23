@@ -23,7 +23,7 @@ export default async function PageLayout({ children, params }: { children: React
     return (
         <div>
             <Nav />
-            <Page>
+            <Page title={meta.title}>
                 {children}
             </Page>
         </div>
