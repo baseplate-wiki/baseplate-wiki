@@ -1,6 +1,11 @@
 export const content_registry = {
     'index': () => import('./index.mdx'),
     'test': () => import('./test.mdx'),
+
+    'Plugins': () => import('./Plugins/index.mdx'),
+    'Plugins/Resurface': () => import('./Plugins/Resurface.mdx'),
+    'Plugins/GapFill': () => import('./Plugins/GapFill.mdx'),
+    'Plugins/ResizeAlign': () => import('./Plugins/ResizeAlign.mdx'),
 } as const;
 
 

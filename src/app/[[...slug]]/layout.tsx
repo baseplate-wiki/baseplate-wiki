@@ -4,6 +4,8 @@ import { all_page_slugs, content_registry } from "@/content/registry";
 import Nav from "@/src/components/nav";
 import Page from "@/src/components/page";
 
+import '../prose.css'
+
 type content_module = {
   default : React.ComponentType<any>;
   meta : { title ?: string; };

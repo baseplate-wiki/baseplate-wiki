@@ -3,5 +3,5 @@ declare module "*.mdx" {
   const MDXComponent: (props: Record<string, unknown>) => React.ReactElement;
   export default MDXComponent;
 
-  export const meta : { title ?: string; };
+  export const meta : { title : string; };
 }
