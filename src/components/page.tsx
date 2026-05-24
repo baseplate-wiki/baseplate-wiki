@@ -16,7 +16,10 @@ export default function Page({ children, title }: {children: React.ReactNode, ti
                 <Link target="_blank" href={`https://raw.githubusercontent.com/baseplate-wiki/baseplate-wiki/refs/heads/main/content/${slug}.mdx`}>[ view raw ]</Link>
             </div>
 
-            <h1 className="font-bold text-3xl tracking-tight mb-2"> {title} </h1>
+            <div>
+                {slug.split('/')[1] ? <Link href={'./'} className="text-white/80">{slug.split('/')[0]}</Link> : <></>}
+                <h1 className="font-bold text-3xl tracking-tight mb-2"> {title} </h1>
+            </div>
 
             <div className="prose">
                 {children}
