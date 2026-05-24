@@ -17,7 +17,7 @@ export default function Page({ children, title }: {children: React.ReactNode, ti
             </div>
 
             <div>
-                {slug.split('/')[1] ? <Link href={'./'} className="text-white/80">{slug.split('/')[0]}</Link> : <></>}
+                <Link href={'/'} className="text-white/80">Baseplate Wiki</Link> {slug.split('/')[1] ? <Link href={'./'} className="text-white/80">&gt; {slug.split('/')[0]}</Link> : <></>}
                 <h1 className="font-bold text-3xl tracking-tight mb-2"> {title} </h1>
             </div>
 
