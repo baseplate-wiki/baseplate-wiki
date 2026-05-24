@@ -21,6 +21,10 @@
     padding-left: 4px;
 }
 
+.prose ul {
+    margin-bottom: 12px;
+}
+
 .prose a {
     text-decoration: underline;
 }
