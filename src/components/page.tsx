@@ -2,17 +2,17 @@
 
 import Link from "next/link";
 import React from "react";
+import { usePathname } from 'next/navigation'
 
 export default function Page({ children, title }: {children: React.ReactNode, title : string}) {
-    const url = new URL(document.URL)
-
-    const slug = url.pathname.substring(1)
+    const slug = usePathname().substring(1)
 
     return <main className="m-4">
         <div className="container mx-auto">
 
             <div className="mb-4">
                 <Link target="_blank" href={`https://github.com/baseplate-wiki/baseplate-wiki/tree/main/content/${slug}.mdx`}>[ edit this page ]</Link>
+                &nbsp;
                 <Link target="_blank" href={`https://raw.githubusercontent.com/baseplate-wiki/baseplate-wiki/refs/heads/main/content/${slug}.mdx`}>[ view raw ]</Link>
             </div>
 
