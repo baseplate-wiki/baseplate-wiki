@@ -6,6 +6,7 @@ export const content_registry = {
     'Plugins/Resurface': () => import('./Plugins/Resurface.mdx'),
     'Plugins/GapFill': () => import('./Plugins/GapFill.mdx'),
     'Plugins/ResizeAlign': () => import('./Plugins/ResizeAlign.mdx'),
+    'Plugins/InCommand': () => import('./Plugins/InCommand.mdx'),
 } as const;
 
 
