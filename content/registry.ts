@@ -7,6 +7,7 @@ export const content_registry = {
     'Plugins/GapFill': () => import('./Plugins/GapFill.mdx'),
     'Plugins/ResizeAlign': () => import('./Plugins/ResizeAlign.mdx'),
     'Plugins/InCommand': () => import('./Plugins/InCommand.mdx'),
+    'Plugins/Archimedes': () => import('./Plugins/Archimedes.mdx'),
 } as const;
 
 
